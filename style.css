@@ -20,7 +20,7 @@
 }
 
 .dark-mode {
-    --bg-color: #0b061f;
+    --bg-color: #0b021b;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
 }
@@ -135,9 +135,6 @@ section {
 
 .home-content p {
     font-size: 1.6rem;
-    flex-direction: column-reverse;
-    max-width: 35rem;
-    
     
 } 
 
@@ -192,7 +189,6 @@ section {
     height: 768px;
     overflow: hidden;
     pointer-events: none;
-    
 }
 
 .home .profession-container .profession-box{
@@ -206,7 +202,6 @@ section {
     justify-content: center;
     align-items: center;  
     animation: professionRotate 13s ease-out infinite; 
-    
 }
 
 @keyframes professionRotate {
@@ -237,9 +232,7 @@ section {
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
     background: var(--bg-color);
-    background: var(--bg-color);
     padding: 13px 0;
-    
 }
 
 .home .profession-box .profession:nth-child(1) i {
@@ -266,6 +259,7 @@ section {
 .home .profession-box .circle{
     width: 560px;
     height: 560px;
+    ;
     border: 3px solid var(--main-color);
     border-radius: 50%;
 } 
@@ -273,7 +267,7 @@ section {
 .home .profession-container .overlay{
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     width: 0;
     height: 0;
     border-top: 384px solid var(--main-color);
@@ -291,6 +285,7 @@ section {
     width: 66%;
     pointer-events: none;
     animation:step-start 1s ease forwards;  
+    max-height:100%;
      
     
 }
@@ -621,13 +616,6 @@ span {
         height: 85.8em;
     }
 
-    .home .home-content {
-        max-width: 31rem;
-        flex-direction:column-reverse;  
-    }
-
-    
-
     .home .profession-container .profession-box{
         right:-12rem;
         height: 85.8em;
@@ -641,11 +629,6 @@ span {
 @media(max-width: 1024px) {
     .header {
         padding: 2rem 3%;
-    }
-
-    .home .home-content {
-        max-width: 40rem;
-        flex-direction:column-reverse;  
     }
     
     section {
@@ -673,8 +656,8 @@ span {
     }
 
     .home .home-content {
-        max-width: 46rem;
-        flex-direction:column-reverse;  
+        max-width: 50rem;
+        justify-content: center;
     }
 
     .home .profession-container .profession-box {
@@ -756,7 +739,6 @@ span {
         padding: 0 3% 23rem;
         justify-content: center;
         text-align: center;
-        flex-direction: column-reverse;
     }
 
     .home-content h3 {
@@ -818,7 +800,6 @@ span {
         z-index: -1;
         
     }
-
     .home .profession-container .overlay {
         position: fixed;
         top: 70rem;
@@ -919,6 +900,8 @@ span {
         margin-top: 2rem;
     }
 }
+
+    
 
 
 
